@@ -1,11 +1,10 @@
 # Write a program that will give you the sum of three digits.
 
-num = int(input("Enter the three-digit number: "))
+num = int(input("Enter the  number: "))
+s=0
+while num!=0:
+    s+=num%10
+    num=num//10
 
-a = num % 10  # (123 % 10 = 3)
-num = num // 10  # (123 // 10 = 12)
-b = num % 10  # (12 % 10 = 2)
-c = num // 10  # (12 // 10 = 1)
-rev = (a + b + c)
 
-print(rev)
+print(s)
